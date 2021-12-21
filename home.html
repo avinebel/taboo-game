@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Taboo</title>
+        <script src="cardCall.js" type="module"></script>
+        <script src="cards.js"></script>
+        <script src="scores.js" type="module"></script>
+        <script src="timer.js" type="module"></script>
+        <link href="style.css" rel="stylesheet" type="text/css">
+    </head>
+    <body>
+        <header>
+            <h1><a href="https://howdoyouplayit.com/taboo-game-rules-play-taboo/" target="_blank">Taboo Game</a></h1>
+        </header>
+        <table id="card">
+            <th id="word"></th>
+            <!-- <div id="taboos">
+                
+            </div> -->
+            <tr id="taboo1"></tr>
+            <tr id="taboo2"></tr>
+            <tr id="taboo3"></tr>
+            <tr id="taboo4"></tr>
+            <tr id="taboo5"></tr>
+            <tr id="explain"></tr>
+        </table>
+        <div class="centered">
+            <button id="new-word">Generate New Word</button>
+        </div>
+        <div class="centered">
+            <div class="score">
+                <p>Team 1 Score: <span id="score1">0</span></p>
+                <button id="addTo1">Add Point to Team 1</button>
+            </div>
+            <div class="score">
+                <p>Team 2 Score: <span id="score2">0</span></p>
+                <button id="addTo2">Add Point to Team 2</button>
+            </div>
+        </div>
+        <div class="centered">
+            <p>Time Left: <span id="time">60</span></p>
+            <button id="start">Start Timer</button>
+            <button id="stop">Stop/Reset Timer</button>
+        </div>
+    </body>
+</html>
