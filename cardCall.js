@@ -6,6 +6,7 @@ let htmlTaboo2 = document.getElementById("taboo2")
 let htmlTaboo3 = document.getElementById("taboo3")
 let htmlTaboo4 = document.getElementById("taboo4")
 let htmlTaboo5 = document.getElementById("taboo5")
+let htmlExtra = document.getElementById("explain")
 let button = document.getElementById("new-word")
 
 import data from './cards.js'
@@ -29,6 +30,7 @@ const formatCards = (json) => {
     htmlTaboo3.innerHTML = `<td>${displayTaboo3}</td>`;
     htmlTaboo4.innerHTML = `<td>${displayTaboo4}</td>`;
     htmlTaboo5.innerHTML = `<td>${displayTaboo5}</td>`;
+    htmlExtra.innerHTML = '';
 
     // let i = 1;
     // for (let taboo in json[random].taboos) {
